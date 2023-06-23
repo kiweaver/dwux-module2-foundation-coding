@@ -1,6 +1,7 @@
 var priceCalculator = document.getElementById('quote-calc');
 priceCalculator.onchange = calculatesubtotal;
 priceCalculator.onchange();
+// Functions
 function calculatesubtotal() {
 	var hostel = Number(document.getElementById('hostel').value) || 0;
 	var extras = 0;
@@ -9,22 +10,23 @@ function calculatesubtotal() {
 	var dinner = 0;
 	var internet = 0;
 	var laundry = 0;
-		if ( $( "#breakfast-col" ).hasClass( "on" ) ) {  breakfast = 100; }
-		if ( $( "#lunch-col" ).hasClass( "on" ) ) { lunch = 100; }
-		if ( $( "#dinner-col" ).hasClass( "on" ) ) { dinner = 100; }
-		if ( $( "#internet-col" ).hasClass( "on" ) ) { internet = 20; }
-		if ( $( "#laundry-col" ).hasClass( "on" ) ) { laundry = 40; }
+	if ($("#breakfast-col").hasClass("on")) { breakfast = 100; }
+	if ($("#lunch-col").hasClass("on")) { lunch = 100; }
+	if ($("#dinner-col").hasClass("on")) { dinner = 100; }
+	if ($("#internet-col").hasClass("on")) { internet = 20; }
+	if ($("#laundry-col").hasClass("on")) { laundry = 40; }
 	extras = breakfast + lunch + dinner + internet + laundry;
-	
+
 	var subtotal = hostel + extras;
 	document.getElementById("total").innerHTML = "$" + subtotal.toFixed(2);
 }
 
-$('#breakfast-col').on('click', function() {
+//Breakfast
+$('#breakfast-col').on('click', function () {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
-		// run function to remove all other 'ons' from other oftens
+		// Run function to remove all other 'ons' from other oftens
 		document.getElementById("breakfast").src = "breakfast.jpg";
 	} else {
 		$$.removeClass('on');
@@ -32,11 +34,13 @@ $('#breakfast-col').on('click', function() {
 	}
 	calculatesubtotal();
 })
-$('#lunch-col').on('click', function() {
+
+//Lunch
+$('#lunch-col').on('click', function () {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
-		// run function to remove all other 'ons' from other oftens
+		// Run function to remove all other 'ons' from other oftens
 		document.getElementById("lunch").src = "lunch.jpg";
 	} else {
 		$$.removeClass('on');
@@ -44,11 +48,13 @@ $('#lunch-col').on('click', function() {
 	}
 	calculatesubtotal();
 })
-$('#dinner-col').on('click', function() {
+
+//Dinner
+$('#dinner-col').on('click', function () {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
-		// run function to remove all other 'ons' from other oftens
+		// Run function to remove all other 'ons' from other oftens
 		document.getElementById("dinner").src = "dinner.jpg";
 	} else {
 		$$.removeClass('on');
@@ -56,11 +62,13 @@ $('#dinner-col').on('click', function() {
 	}
 	calculatesubtotal();
 })
-$('#internet-col').on('click', function() {
+
+//Internet
+$('#internet-col').on('click', function () {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
-		// run function to remove all other 'ons' from other oftens
+		// Run function to remove all other 'ons' from other oftens
 		document.getElementById("internet").src = "internet.jpg";
 	} else {
 		$$.removeClass('on');
@@ -68,11 +76,13 @@ $('#internet-col').on('click', function() {
 	}
 	calculatesubtotal();
 })
-$('#laundry-col').on('click', function() {
+
+//Laundry
+$('#laundry-col').on('click', function () {
 	var $$ = $(this)
 	if (!$$.is('.on')) {
 		$$.addClass('on');
-		// run function to remove all other 'ons' from other oftens
+		// Run function to remove all other 'ons' from other oftens
 		document.getElementById("laundry").src = "laundry.jpg";
 	} else {
 		$$.removeClass('on');

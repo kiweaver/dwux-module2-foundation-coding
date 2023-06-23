@@ -1,23 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<!-- Meta -->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Holiday Booking Accommodation">
+	<meta name="keywords"
+		content="holiday booking, breakfast, lunch, dinner, laundry, internet, hotel, hostel, motel, house,">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!--CSS Stylesheet Link-->
 	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<!--Project Title-->
 	<title>
-		Assignment
+		Holiday Booking Accommodation Assignment
 	</title>
 </head>
 
 <body>
 
 	<div class="col-sm-12 quote-calc col-xs-12" id="quote-calc">
+		<!-- Heading -->
 		<h3>Holiday Booking</h3>
-
+		<!--Form Group Accommodation Begins-->
 		<div class="form-group">
 			<h4>Accommodation (please select):</h4>
 			<select class="form-control" id="hostel">
-				<!--Hotel Costs-->
+				<!--Hotel Costs Begins-->
 				<option value="0">Select your choice</option>
 
 				<option value="157.00">Hotel 1 day 1-2 People</option>
@@ -25,8 +35,9 @@
 				<option value="471.00">Hotel 3 days 1-2 People</option>
 				<option value="628.00">Hotel 4 days 1-2 People</option>
 				<option value="785.00">Hotel 5 days 1-2 People</option>
+				<!--Hotel costs End-->
 
-				<!--Hostel Costs-->
+				<!--Hostel Costs Begins-->
 				<option value="30.00">Hostel 1 day 1 Person</option>
 				<option value="60.00">Hostel 2 days 1 Person</option>
 				<option value="90.00">Hostel 3 days 1 Person</option>
@@ -37,8 +48,9 @@
 				<option value="240.00">Hostel 8 days 1 Person</option>
 				<option value="270.00">Hostel 9 days 1 Person</option>
 				<option value="300.00">Hostel 10 days 1 Person</option>
+				<!--Hostel Costs End-->
 
-				<!--Motel Costs-->
+				<!--Motel Costs Begin-->
 				<option value="90.00">Motel 3 days 2-4 People</option>
 				<option value="180.00">Motel 4 days 2-4 People</option>
 				<option value="270.00">Motel 5 days 2-4 People</option>
@@ -47,8 +59,9 @@
 				<option value="540.00">Motel 8 days 2-4 People</option>
 				<option value="630.00">Motel 9 days 2-4 People</option>
 				<option value="720.00">Motel 10 days 2-4 People</option>
+				<!--Motel Costs End-->
 
-				<!--House Costs-->
+				<!--House Costs Begin-->
 				<option value="240.00">House 2 days 1 Person</option>
 				<option value="480.00">House 3 days 1-4 people</option>
 				<option value="720.00">House 4 days 1-4 people</option>
@@ -62,15 +75,20 @@
 				<option value="2640.00">House 12 days 1-4 people</option>
 				<option value="2880.00">House 13 days 1-4 people</option>
 				<option value="3120.00">House 14 days 1-4 people</option>
-
+				<!--House Costs End-->
 
 			</select>
 		</div>
-
+		<!-- Form Group Accommodation Ends-->
+		<!-- Row Extras-->
 		<div class="row-extras">
+			<!--Extras Heading-->
 			<h4>Do you want to add any extras?</h4>
+			<!--Estimate Heading-->
 			<h5>(Click a tile to add it to your estimate)</h5>
+			<!--Form Group Extras Begins-->
 			<div class="form-group" id="extras">
+				<!--Breakfast Begins-->
 				<div class="col-sm-4 col-xs-6">
 					<div class="extra-container" id="breakfast-col">
 						<img src="breakfast.jpg" title="breakfast" id="breakfast" />
@@ -78,6 +96,8 @@
 						<div class="extra-price">$100</div>
 					</div>
 				</div>
+				<!--Breakfast Ends-->
+				<!--Lunch Begins-->
 				<div class="col-sm-4 col-xs-6">
 					<div class="extra-container" id="lunch-col">
 						<img src="lunch.jpg" title="lunch" id="lunch" />
@@ -85,6 +105,8 @@
 						<div class="extra-price">$100</div>
 					</div>
 				</div>
+				<!--Lunch Ends-->
+				<!--Dinner Begins-->
 				<div class="col-sm-4 col-xs-6">
 					<div class="extra-container" id="dinner-col">
 						<img src="dinner.jpg" title="dinner" id="dinner" />
@@ -92,6 +114,8 @@
 						<div class="extra-price">$100</div>
 					</div>
 				</div>
+				<!--Dinner Ends-->
+				<!--internet Beings-->
 				<div class="col-sm-4 col-sm-offset-2 col-xs-6">
 					<div class="extra-container" id="internet-col">
 						<img src="internet.jpg" title="internet" id="internet" />
@@ -99,34 +123,36 @@
 						<div class="extra-price">$20</div>
 					</div>
 				</div>
+				<!--Internet Ends-->
+				<!--Laundry Begins-->
 				<div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-
 					<div class="extra-container" id="laundry-col">
 						<img src="laundry.jpg" title="laundry" id="laundry" />
 						<div class="extra-name">Load of Laundry</div>
 						<div class="extra-price">$40</div>
 					</div>
 				</div>
-
+				<!-- Laundry Ends-->
 			</div>
+			<!--Form Group Extras Ends-->
 
-
-
+			<!--Row Often Begins-->
 			<div class="row-often">
-
+				<!--Estimate Total-->
 				<h2>Your Estimate:</h2>
 				<span class="total" id="total">
 					Total
 				</span>
 
 			</div>
+			<!--Row Often Ends-->
 
 
 
 		</div>
 
 	</div>
-
+	<!--JavaScript-->
 	<script type="text/javascript" src="main.js"></script>
 </body>
 
