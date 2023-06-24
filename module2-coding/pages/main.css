@@ -1,0 +1,183 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/*Quote Styling Begins*/
+#quote-calc .total {
+    font-size: 24px;
+}
+
+#quote-calc .quote-calc {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#quote-calc .quote-col {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+#quote-calc .quote {
+    border: 2px solid #9d3bff;
+    border-radius: 10px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    background-color: #FFF;
+}
+
+#quote-calc .quote-col a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#quote-calc .form-control {
+    margin-top: 10px;
+}
+
+/*Quote Styling Ends*/
+
+/* Form Control */
+.form-control {
+    border: 5px solid #9d3bff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #020b05;
+}
+
+/* Row Often Begins */
+#quote-calc .row-often .col-occur {
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 2px solid transparent;
+    margin: 15px auto;
+}
+
+#quote-calc .row-often .col-occur img {
+    width: 100%;
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+#quote-calc .row-often {
+    margin-top: 20px;
+}
+
+#quote-calc .row-often .on {
+    border: 2px solid #9d3bff;
+    background-color: #FFF;
+    ;
+}
+
+#quote-calc .row-often .on .disc {
+    color: #9d3bff;
+}
+
+#quote-calc .row-often .form-group,
+.row-extras #quote-calc .form-group,
+.row-extras {
+    margin-top: 20px;
+}
+
+#quote-calc .row-often .disc {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*Row Often Ends*/
+
+/* Extras */
+.extra-container {
+    font-size: 20px;
+}
+
+#quote-calc .row-extras {
+    margin-top: 50px;
+}
+
+#quote-calc .row-extras .col-sm-12 {
+    margin-bottom: 30px;
+}
+
+/*Extra Container*/
+#quote-calc .row-extras .extra-container {
+    background-color: #fff;
+    border: 2px solid #9d3bff;
+    border-radius: 10px;
+    padding: 10px 1px;
+    margin: 10px auto;
+    min-height: 150px;
+}
+
+/*Images*/
+#quote-calc .row-extras img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* Extra Name */
+#quote-calc .row-extras .extra-name {
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Extra Price */
+#quote-calc .row-extras .extra-price {
+    margin-top: 10px;
+    text-align: center;
+    color: #9d3bff;
+}
+
+/* Row Extras */
+#quote-calc .row-extras .on {
+    border: 2px solid #020b05;
+    background-color: #020b05;
+}
+
+#quote-calc .row-extras .on .extra-name {
+    color: #9d3bff;
+    text-align: center;
+}
+
+/* Code that will be redundant after publishing */
+.quote a {
+    border: 2px solid #9d3bff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    font-size: 22px;
+    text-decoration: none;
+    color: #FFF;
+    background-color: #9d3bff;
+}
+
+.quote a:hover {
+    background-color: transparent;
+    color: #9d3bff;
+}
+
+/*.quote-calc { max-width: 50%; }*/
+h3 {
+    text-align: center;
+    font-size: 50px;
+    color: #02864a;
+}
+
+/* Accommodation Heading */
+h4 {
+    font-size: 22px;
+}
+
+/* Estimate Title*/
+h5 {
+    font-size: 16px;
+}
